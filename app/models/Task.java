@@ -1,17 +1,13 @@
 package models;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import play.modules.mongodb.jackson.MongoDB;
-import net.vz.mongodb.jackson.JacksonDBCollection;
+import javax.persistence.Entity;
+
 import net.vz.mongodb.jackson.Id;
+import net.vz.mongodb.jackson.JacksonDBCollection;
 import net.vz.mongodb.jackson.ObjectId;
-import org.codehaus.jackson.annotate.JsonProperty;
-
-import javax.persistence.*;
-
-import play.data.validation.Constraints.Required;
+import play.modules.mongodb.jackson.MongoDB;
 
 @Entity
 public class Task {
